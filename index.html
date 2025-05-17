@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>StackOverDesculpas</title>
+</head>
+<body>
+  
+  <section>
+    <div class="texto">
+      <p>Seja bem-vindo ao</p>
+      <h1>StackOver<span class="color-span">Desculpas</span></h1>
+    </div>
+
+    <div class="opcoes-secao">
+      <div class="opcoes">
+        <label for="categoria">Escolha a categoria:</label>
+        <select id="categoria">
+        <option value="gerais">Desculpas Gerais</option>
+        <option value="trabalho">Desculpas de Trabalho</option>
+        <option value="tech">Desculpas Tech</option>
+        </select>
+      </div>
+      <button id="mostrar" onclick="gerarDesculpa()">Gerar desculpa</button>
+    </div>
+
+    <h3 id="resultado"></h3>
+
+  </section>
+  <script src="/js/index.js"></script>
+</body>
+</html>

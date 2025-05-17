@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --fundo-principal: #0F172A;
+  --fundo-card: #1E293B;
+  --cor-destaque: #38BDF8;
+  --cor-secundaria: #22D3EE;
+  --texto-principal: #F1F5F9;
+  --texto-secundario: #94A3B8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--fundo-principal);
+  color: var(--texto-principal);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: var(--fundo-card);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 30px 20px;
+
+  width: 90%;
+  max-width: 600px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.texto p {
+  font-size: 1.2rem;
+}
+
+.texto h1 {
+  font-size: 2rem;
+}
+
+.color-span {
+  color: var(--texto-secundario);
+}
+
+.opcoes-secao {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.opcoes label {
+  font-size: 1rem;
+}
+
+#categoria {
+  background-color: var(--texto-principal);
+  color: var(--fundo-principal);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+}
+
+#categoria option {
+  font-weight: bold;
+}
+
+#mostrar {
+  background-color: var(--cor-destaque);
+  color: var(--fundo-principal);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#mostrar:hover {
+  background-color: #43d7ee;
+  transform: scale(1.05);
+}
+
+#resultado {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+  .texto h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto p {
+    font-size: 1rem;
+  }
+
+  #mostrar {
+    width: 100%;
+  }
+
+  section {
+    padding: 20px 15px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1E293B;
+  font-size: 0.9rem;
+  color: var(--texto-principal);
+}
